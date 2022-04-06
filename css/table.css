@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+table {
+  	font-family: 'Josefin Sans', sans-serif;
+  	border-collapse: collapse;
+  	width: 50%;
+	margin: auto;
+
+}
+
+td, th {
+  	border: 1px solid ;
+  	text-align: center;
+  	padding: 10px;
+}
+th{
+	background-color: #193939;
+	color:  #F9D6AF;
+	letter-spacing: 0.06em;
+	padding-top:18px;
+	padding-bottom:18px;
+}

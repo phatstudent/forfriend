@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (min-width: 641px) {
+    
+    p {
+        column-gap: 20px;
+        column-rule: 1px solid black;
+    }
+}

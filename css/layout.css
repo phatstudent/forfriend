@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* CSS Document */
+.container {
+  	text-align: center;
+	position: absolute;
+  	width: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+  text-align:center;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+}
+
+/*  */
+.col-1 {
+	width: 50%;	
+}
+
+/* Center align image in div (index.html) */
+.col-1 img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.story-div {
+	flex-wrap: wrap;
+}
+
+/* Set space between rows */
+.row {
+	display: flex;
+	width: 100%;
+}
+.row-img3 {
+	margin:150px;
+	float: right;
+}
+.row-img4 {
+	margin: 150px;
+}
+/* Clear floats after the columns */
+.row::after {
+	content: "";
+	clear: both;	
+}
+
+.column1-menu {
+	width: 40.33%;
+	padding: 50px;
+	text-align: center;
+	display:inline;
+}
+.column2-menu {
+	position:relative;
+	left:60%;
+	width: 40.33%;
+	padding: 50px;
+	text-align: center;
+	display:inline;
+}
+
+footer {
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+}
+footer > * {
+	margin: 20px;
+}
+
+
+.form-div {
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* video div styles */
+.video-div {
+	margin-top: 100px;
+}
+
+.frame-div {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	width: 100%;
+}
+	.ss-row {
+		display: flex;
+		width: 100%;
+	}
+
+	.ss-row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+/* .form-test label { display: table-cell; }
+.form-test .table-row {display: table-row; margin-bottom: 10px;}
+.form-test
+.form-test input { display: table-cell; } */
+
+
+
+

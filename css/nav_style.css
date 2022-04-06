@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #193939;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.centered {
+  	position: absolute;
+	font-size: 4em;
+	color: #F9D6AF;
+	width: 100%;
+	text-align: center;
+}
+.bg-img {
+  /* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -200px;
+}
+.topnav {
+	overflow: hidden;
+	align-items: center;
+    justify-content: center;
+	display: flex;
+    width: 100%;
+	position:absolute;
+	top: 200px;  
+	font-size: 18px;
+}
+
+/* Navbar links */
+.topnav a {
+  	color: #F9D6AF;
+  	text-align: center;
+  	padding: 50px 50px;
+  	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight:350;
+	background-color: none;
+}
+
+.topnav a:hover {
+  	color: white;
+}
+
+#home-middle-text {
+	position: absolute;
+	top: 16%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Responsive */
+@media screen and (max-width:1024px) {
+	#home-middle-text{
+		top: 13%;
+		
+	}
+	.centered{
+		font-size: 3.6em;
+	}
+}
+@media screen and (max-width:768px) {
+	#home-middle-text{
+		top: 13%;
+		
+	}
+	.centered{
+		font-size: 2.6em;
+	}
+	.topnav{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 768px) {
+	div#slider figure img{
+		width: 120px;
+		height: 200px;
+	}
+	
+}
+#contact-middle-text {
+	position: absolute;
+	top: 21%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media  screen and (max-width:768px) {
+	#contact-middle-text{
+		top:15%;
+	}
+	
+}
+#contact2-middle-text {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#menu-middle-text {
+	position: absolute;
+	top: 7%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#about-middle-text {
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+

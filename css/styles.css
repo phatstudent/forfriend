@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #193939;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+article,
+header,
+h1,
+h2,
+section,
+footer,
+main,
+nav {
+  display: block;
+}
+/*homepage*/
+.auto-slider {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 10px 10px 20px;
+  border: solid 1px #f9d6af;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+@keyframes sliding {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes indicating {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s sliding ease infinite;
+}
+
+/* Slider indicator */
+.indicator {
+  width: 100%;
+  max-width: 800px;
+  height: 6px;
+  background: #f9d6af;
+  position: absolute;
+  bottom: 0;
+  animation: indicating 5s ease infinite;
+}
+/* ******************************************************
+	Responsive Grids (it doesn't work so I turn it off, can you fix it?)
+********************************************************
+
+.rt-container {
+	margin: 0 auto;
+	padding-left:12px;
+	padding-right:12px;
+}
+.rt-row:before, .rt-row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.rt-row:after {
+  clear: both;
+}
+[class^="col-rt-"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  min-height: 1px;
+  position: relative;
+}
+
+
+@media (min-width: 768px) {
+  .rt-container {
+    width: 750px;
+  }
+  [class^="col-rt-"] {
+    float: left;
+    width: 49.9999999999%;
+  }
+  .col-rt-6, .col-rt-12 {
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+	.rt-container {
+		width: 1170px;
+	}
+	.col-rt-1 {
+		width:16.6%;
+	}
+	.col-rt-2 {
+		width:30.33%;
+	}
+	.col-rt-3 {
+		width:50%;
+	}
+	.col-rt-4 {
+		width: 67.664%;
+	}
+	.col-rt-5 {
+		width: 83.33%;
+	}
+	
+
+} */
+/* about.html styles */
+.column {
+  color: #f9d6af;
+  font-weight: 300;
+  line-height: 30px;
+}
+h2 {
+  font-size: 25px;
+  color: #f9d6af;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+.about-story {
+  color: #f9d6af;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.about-story-div {
+  border: 1px solid #f9d6af;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  clear: both;
+}
+
+.frame {
+  width: 50%;
+  border: 3px solid #ccc;
+  background: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+#img-blur {
+  box-shadow: 8px 8px 2px rgba(255, 255, 255, 0.2);
+}
+.story-div {
+  margin-top: 15%;
+}
+.story {
+  text-align: left;
+  margin-right: 150px;
+  font-size: 18px;
+  line-height: 50px;
+  border: 1px solid #f9d6af;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #f9d6af;
+}
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .story {
+    font-size: 12px;
+  }
+  .story p {
+    display: -webkit-box;
+    /* width: 300px; */
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+   
+  }
+}
+@media screen and (max-width:768px) {
+	.story {
+		padding-left: 11px;
+		padding-right: 11px;
+		margin-right: 0;
+
+	}
+	.btn{
+		font-size: 9px;
+	}
+	
+}
+.center-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -50px;
+}
+.btn {
+  border: 1px solid #f9d6af;
+  background-color: #193939;
+  color: #f9d6af;
+  padding: 17px 35px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  /* float:left; */
+  /* margin-left: 28%; */
+}
+/* Responsive */
+@media  screen and (max-width:1024px) {
+	.btn{
+		padding: 12px 20px;
+		margin-top:8%;
+		font-size: 12px;
+		/* margin-left: 15%; */
+	}
+	
+}
+/* Responsive center_button */
+@media  screen and (max-width:1024px) {
+	.center-button a{
+		margin-top: 2%;
+		/* margin-left: 35%; */
+	}
+	
+}
+.btna {
+  border: 1px solid #f9d6af;
+  background-color: #193939;
+  color: #f9d6af;
+  padding: 17px 35px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+.img__col{
+	width: 70%;
+	height: 112%
+}
+@media screen and (max-width: 1024px) {
+	.img__col{
+		width: 61%;
+		height: 75%;
+	}
+	
+}
+.a:hover {
+  border: 1px solid #f9d6af;
+  background-color: #f9d6af;
+  color: #336667;
+}
+
+/*menu page*/
+.img-border {
+  box-shadow: 10px 10px 1px rgba(255, 255, 255, 0.1);
+}
+.starters {
+  font-size: 2em;
+  border: 1px;
+  text-align: center;
+  line-height: 80px;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+  width: 300px;
+  color: #f9d6af;
+  border-color: #f9d6af;
+  border-style: solid;
+  display: inline-block;
+  align-items: center;
+}
+.menu-main-body {
+  display: inline;
+}
+.menu-items-title {
+  padding-top: 59px;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+
+.menu-items-detail p {
+  text-align: left;
+  margin-right: 150px;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+.menu-items-title-right {
+  position: relative;
+  right: 60%;
+  padding-top: 59px;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width:768px) {
+	.menu-items-title-right{
+		font-size: 16px;
+		margin-top: 0;
+	}
+	.menu-items-title{
+		font-size: 16px;
+		margin-top: 0;
+	}
+	.menu-items-detail p {
+		font-size: 12px;
+	}
+	
+	
+}
+.menu-items-detail-right p {
+  text-align: right;
+  position: relative;
+  right: 60%;
+  margin-right: 150px;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width:768px){
+	.menu-items-detail-right p{
+		font-size: 12px;
+	}
+	
+}
+/*contact styles*/
+fieldset {
+  border: 1px solid #f9d6af;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+legend {
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  color: #f9d6af;
+}
+label {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f9d6af;
+}
+input,
+textarea,
+select,
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: #193939;
+  box-sizing: border-box;
+  border: 1px solid #f9d6af;
+  color: #f9d6af;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.subscribe {
+  background-color: #193939;
+  box-sizing: border-box;
+  border: 1px solid #f9d6af;
+}
+
+legend {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+footer {
+  background-color: black;
+  color: #f9d6af;
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 30px;
+  background-image: linear-gradient(#193939, black);
+}
+
+footer > h2 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 100px;
+  font-weight: 600;
+}
+
+footer > h3 {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 15px;
+}
+/* CSS ABOUT */
+#img-blur{
+	width: 70%;
+	height: 100%;
+}
+.story {
+	margin-bottom: 12%;
+}
+/* Responsie ABOUT */
+@media screen and (max-width:768px) {
+	.video-div video{
+		width: 593px;
+	}
+	#img-blur{
+		width: 55%;
+	}
+	
+}
+
+@media screen and (max-width: 1024px){
+	#about-middle-text{
+		top:7% !important;
+	}
+	#img-blur{
+		height: inherit;
+	}
+	.sub__story p{
+		display: -webkit-box;
+		width: 300px; 
+		line-height: 25px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 15;
+		-webkit-box-orient: vertical;	
+    color: #f9d6af;
+	}
+}
+@media screen and (max-width:768px) {
+	.story-div p{
+		display: -webkit-box;
+		/* width: 300px;  */
+		line-height: 25px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 8;
+		-webkit-box-orient: vertical;	
+	}
+	.story-div {
+		margin-right: 20px;
+	}
+}
+/* CSS menu */
+.menu__row{
+	margin: 10px;
+}
+/* CSS INDEX */
+.center-button{
+	margin: 10px;
+}
